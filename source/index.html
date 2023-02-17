@@ -4,6 +4,66 @@
 
 {% block main %}
 <main>
-	Контент главной страницы
+	<div class="hero centerer-container">
+		<h1 class="hero__title">Милые штуки ручной работы для дома</h1>
+	</div>
+
+	<ul class="products-type">
+		<li class="products-type__list products-type__list--interier">Предметы интерьера</li>
+		<li class="products-type__list products-type__list--toys">Детские игрушки</li>
+	</ul>
+
+	<div class="featured centerer-container">
+		<span class="featured__week-product">ТОВАР НЕДЕЛИ</span>
+		<p class="featured__description">
+			Экологически чистая пряжа,ручная работа. Доступны в шести расцветках и трёх размерах.
+		</p>
+		<dl class="featured-parameters">
+			<div class="featured-parameters__item">
+				<dt class="featured-parameters__title">Цвет:</dt>
+				<dl class="featured-parameters__description">тиффани/серый</dl>
+			</div>
+			<div class="featured-parameters__item">
+				<dt class="featured-parameters__title">Диаметр:</dt>
+				<dl class="featured-parameters__description">25 см</dl>
+			</div>
+			<div class="featured-parameters__item">
+				<dt class="featured-parameters__title">Высота:</dt>
+				<dl class="featured-parameters__description">15 см</dl>
+			</div>
+		</dl>
+		<div class="featured__image">
+			<img>
+		</div>
+		<div class="featured__prise">Цена: 990 руб.</div>
+		<button class="featured__button" type="button">Заказать</button>
+	</div>
+
+	<section class="about-us centerer-container">
+		<h2 class="about-us__title">Коротко о нас:</h2>
+		<ul class="about-us__list">
+			<li class="about-us__item about-us__item--icon-flower"><div>Экологически чистые материалы</div></li>
+			<li class="about-us__item about-us__item--icon-money"><div>Скандинавский стиль по российской цене</div></li>
+			<li class="about-us__item about-us__item--icon-heart"><div>Увеличивает лайки на фотографиях</div></li>
+			<li class="about-us__item about-us__item--icon-ball"><div>Связано вручную с любовью и умилением</div></li>
+			<li class="about-us__item about-us__item--icon-rocket"><div>Поддержка отечественного производителя</div></li>
+			<li class="about-us__item about-us__item--present"><div>Поставляется в подарочной упаковке</div></li>
+		</ul>
+
+		<div class="feedback">
+			<h2 class="feedback__title"></h2>
+			<p class="feedback__description">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как
+				у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+			</p>
+			<p class="feedback__buyer-name">Анастасия Красильникова</p>
+			<p class="feedback__buyer-email"></p>
+			<div class="feedback__slider">
+				<a href="javascript:void(0)" class="feedback__slider--left"></a>
+				<a href="javascript:void(0)" class="feedback__slider--right"></a>
+			</div>
+			<button class="feedback__button" type="button"></button>
+		</div>
+
+	</section>
 </main>
 {% endblock %}
